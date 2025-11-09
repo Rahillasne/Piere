@@ -1,0 +1,49 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle with gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00A6FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0080CC;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="curveGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E5E5E5;stop-opacity:0.95" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background circle -->
+  <circle cx="256" cy="256" r="240" fill="url(#bgGradient)"/>
+
+  <!-- Stylized Bézier curve forming a "P" shape -->
+  <!-- This represents Pierre Bézier's contribution to CAD and curves -->
+
+  <!-- Vertical stem of P -->
+  <rect x="140" y="140" width="48" height="232" rx="8" fill="url(#curveGradient)"/>
+
+  <!-- Bézier curve forming the loop of P -->
+  <path
+    d="M 188 140
+       C 188 140, 340 140, 340 210
+       C 340 280, 188 280, 188 280
+       L 188 140 Z"
+    fill="none"
+    stroke="url(#curveGradient)"
+    stroke-width="48"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+
+  <!-- Inner curve detail (showing it's hollow like Claude's style) -->
+  <path
+    d="M 188 175
+       C 188 175, 305 175, 305 210
+       C 305 245, 188 245, 188 245
+       L 188 175 Z"
+    fill="#00A6FF"
+  />
+
+  <!-- Subtle geometric accent - three small circles representing control points -->
+  <circle cx="340" cy="210" r="6" fill="#FFFFFF" opacity="0.4"/>
+  <circle cx="188" cy="140" r="6" fill="#FFFFFF" opacity="0.4"/>
+  <circle cx="188" cy="280" r="6" fill="#FFFFFF" opacity="0.4"/>
+</svg>

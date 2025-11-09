@@ -1,0 +1,36 @@
+<svg width="200" height="40" viewBox="0 0 200 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Pierre logo with text -->
+  <defs>
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00A6FF"/>
+      <stop offset="100%" style="stop-color:#0080CC"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Icon: Simplified Bézier "P" -->
+  <g transform="translate(5, 5)">
+    <!-- Vertical stem -->
+    <rect x="0" y="0" width="6" height="30" rx="1.5" fill="url(#textGradient)"/>
+
+    <!-- Curve loop of P -->
+    <path
+      d="M 6 0 C 6 0, 22 0, 22 7.5 C 22 15, 6 15, 6 15 Z"
+      fill="none"
+      stroke="url(#textGradient)"
+      stroke-width="6"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+
+    <!-- Inner hollow -->
+    <path
+      d="M 6 4.5 C 6 4.5, 18 4.5, 18 7.5 C 18 10.5, 6 10.5, 6 10.5 Z"
+      fill="#191A1A"
+    />
+  </g>
+
+  <!-- Text: "Pierre" -->
+  <text x="45" y="27" font-family="'Inter', sans-serif" font-size="24" font-weight="700" fill="url(#textGradient)" letter-spacing="-0.5">
+    Pierre
+  </text>
+</svg>
