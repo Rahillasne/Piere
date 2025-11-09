@@ -1,0 +1,38 @@
+# For detailed configuration reference documentation, visit:
+# https://supabase.com/docs/guides/local-development/cli/config
+
+project_id = "cadam"
+
+[realtime]
+enabled = false
+
+[inbucket]
+enabled = false
+
+[storage]
+enabled = true
+file_size_limit = "50MiB"
+
+[storage.buckets.images]
+public = false
+file_size_limit = "50MiB"
+allowed_mime_types = ["image/png", "image/jpeg", "image/jpg", "image/webp"]
+
+[auth]
+enable_anonymous_sign_ins = true
+
+[functions.chat]
+enabled = true
+verify_jwt = true
+
+[functions.brainstorm-generate]
+enabled = true
+verify_jwt = true
+
+[functions.calculate-quality-score]
+enabled = true
+verify_jwt = true
+
+[functions.auth-link]
+enabled = true
+verify_jwt = false

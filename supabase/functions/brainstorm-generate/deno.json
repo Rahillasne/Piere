@@ -1,0 +1,6 @@
+{
+  "imports": {
+    "@shared/": "../../shared/",
+    "@anthropic-ai/sdk": "https://esm.sh/@anthropic-ai/sdk@0.53.0"
+  }
+}
